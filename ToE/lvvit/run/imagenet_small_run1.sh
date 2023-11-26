@@ -2,7 +2,7 @@
 result_dir=[your_result_path]
 dataset_dir=[your_dataset_path]
 label_dir=[your_token_labeling_dataset_path]
-device=4,5,6,7
+device=0,1,2,3
 master_port=6666
 shift
 CUDA_VISIBLE_DEVICES=$device python3 -m torch.distributed.launch --nproc_per_node=4 main.py "$@" $dataset_dir \
