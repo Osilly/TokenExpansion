@@ -1,6 +1,6 @@
 # TokenExpansion
 
-The official pytorch implementation of TokenExpansion (ToE).
+The official pytorch implementation of Token Expansion (ToE).
 
 ## Requirements
 
