@@ -6,10 +6,10 @@ The official pytorch implementation of Token Expansion (ToE).
 
 ## Update
 
-- `2024.4.17` : Add the example of ToE apply for YOLOS on object detection.
+- `2024.4.17` : Add the example of ToE applying for YOLOS on object detection.
 - `2023.11.26` : Release code of ToE.
 
-:fire: : We find that ToE has a significant effect for PEFT methods. For example, ToE can achieve **2x training speed** and **30% GPU memory saving** for the training of [Visual Prompt Tuning (VPT))](https://github.com/KMnP/vpt), while improving accuracy by 2%-6% on VTAB-1k benchmark. We will release the code soon. Stay tuned!
+:fire: : We find that ToE has a significant effect for PEFT methods. For example, ToE can achieve **2x training speed** and **30% GPU memory saving** for the training of [Visual Prompt Tuning (VPT)](https://github.com/KMnP/vpt), while improving accuracy by 2%-6% on VTAB-1k benchmark. We will release the code soon. Stay tuned!
 
 ## Pipeline
 
@@ -211,6 +211,11 @@ The codes of speedup factors of ToE are presents in `ToE/EfficientTrain/ET_train
 ### YOLOS-S
 
 We train the YOLOS-S on eight GPUs, the COCO dataset and the pertained model (see [original YOLOS repo](https://github.com/hustvl/YOLOS)) are required.
+
+```
+cd ToE/YOLOS
+bash run/coco_small_run1.sh
+```
 
 **run/coco_small_run1.sh**:
 
